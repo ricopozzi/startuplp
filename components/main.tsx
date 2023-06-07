@@ -11,7 +11,7 @@ export const MainSection: React.FC<any> = () => {
     <main className="w-full h-[50vh] md:h-[70vh] flex flex-col items-center justify-center">
       <p
         style={nanum.style}
-        className="text-[2.8rem] md:text-[5rem]  tracking-tight text-center leading-[1]"
+        className="text-[2.8rem] md:text-[5rem] font-bold tracking-tight text-center leading-[1]"
       >
         Create a stylish home <br className="hidden md:flex" /> for your
         company.

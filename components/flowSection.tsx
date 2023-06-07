@@ -24,11 +24,11 @@ interface FlowPointProps {
 
 const FlowPoint: React.FC<FlowPointProps> = ({ text, title, icon, button }) => {
   return (
-    <div className="relative w-fit mx-auto flex gap-x-10 justify-between">
-      <div className="md:w-20 md:h-20 p-4 rounded-full bg-black flex items-center justify-center text-2xl top-0 text-[#01FF96]">
+    <div className="relative w-fit mx-auto flex gap-x-4 md:gap-x-10 justify-between">
+      <div className="h-min md:w-20 md:h-20 p-4 rounded-full bg-black flex items-center justify-center text-2xl top-0 text-[#01FF96]">
         {icon}
       </div>
-      <div className="w-[340px]">
+      <div className="md:w-[340px]">
         <p style={nanum.style} className="text-4xl font-bold">
           {title}
         </p>
