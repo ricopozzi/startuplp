@@ -37,7 +37,7 @@ const NavItem: React.FC<ItemProps> = ({ path, text }) => {
 
 export const Header: React.FC<any> = () => {
   return (
-    <header className="h-20 md:px-12 flex justify-center items-center">
+    <header className="h-20 px-3 md:px-12 flex md:justify-center items-center">
       <div id="logo" className="md:w-32">
         <p className="font-bold text-4xl">Justo</p>
       </div>

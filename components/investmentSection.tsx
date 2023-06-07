@@ -16,8 +16,8 @@ export const InvestmentSection: React.FC = () => {
 
   return (
     <div className="w-full px-[3%]">
-      <main className="w-full h-[70vh] rounded-[3rem] bg-zinc-100 flex">
-        <div className="h-full w-[57%] relative">
+      <main className="w-full h-[90vh] md:h-[70vh] rounded-[3rem] bg-zinc-100 flex flex-col md:flex-row px-4 py-10">
+        <div className="h-full md:w-[57%] relative">
           <Image alt="Imagem investimento" src={heroSvg} fill />
         </div>
 

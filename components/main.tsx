@@ -8,14 +8,15 @@ const nanum = Nanum_Myeongjo({
 
 export const MainSection: React.FC<any> = () => {
   return (
-    <main className="w-full h-[70vh] flex flex-col items-center justify-center">
+    <main className="w-full h-[50vh] md:h-[70vh] flex flex-col items-center justify-center">
       <p
         style={nanum.style}
-        className="text-[5rem] tracking-tight text-center leading-[1]"
+        className="text-[2.8rem] md:text-[5rem]  tracking-tight text-center leading-[1]"
       >
-        Create a stylish home <br /> for your company.
+        Create a stylish home <br className="hidden md:flex" /> for your
+        company.
       </p>
-      <p className="mt-8 text-gray-600 w-1/2 text-center text-xl">
+      <p className="mt-8 font-light text-gray-600 md:w-1/2 text-center text-xl">
         Jetty is a modern Webflow template designed for companies that
         prioritize both aesthetics and functionality.
       </p>
