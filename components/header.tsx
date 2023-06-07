@@ -14,13 +14,13 @@ const navItemsArray = [
     text: "Início",
   },
   {
-    path: "#comofunciona",
-    text: "Como funciona",
+    path: "#proceso",
+    text: "Nosso processo",
   },
   {
-    path: "#sobre",
-    text: "Sobre nós",
-  },
+    path: "#contato",
+    text: "Contato"
+  }
 ];
 
 const NavItem: React.FC<ItemProps> = ({ path, text }) => {

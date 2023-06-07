@@ -19,11 +19,12 @@ interface FlowPointProps {
   text: string;
   title: string;
   icon: ReactNode;
+  button?: boolean
 }
 
-const FlowPoint: React.FC<FlowPointProps> = ({ text, title, icon }) => {
+const FlowPoint: React.FC<FlowPointProps> = ({ text, title, icon, button }) => {
   return (
-    <div className="relative w-full mx-auto flex gap-x-10 items-center justify-center">
+    <div className="relative w-fit mx-auto flex gap-x-10 justify-between">
       <div className="md:w-20 md:h-20 p-4 rounded-full bg-black flex items-center justify-center text-2xl top-0 text-[#01FF96]">
         {icon}
       </div>
@@ -32,6 +33,10 @@ const FlowPoint: React.FC<FlowPointProps> = ({ text, title, icon }) => {
           {title}
         </p>
         <p className="font-light text-gray-600 mt-4 ml-1">{text}</p>
+
+        {button &&  <button className="px-5 w-max rounded-md border-2 border-black duration-100 hover:text-[#01FF96] h-11 bg-black text-white font-medium mt-10">
+          Quero vender meu crédito
+        </button>}
       </div>
     </div>
   );
@@ -51,12 +56,14 @@ export const FlowSection: React.FC = () => {
         Nosso processo
       </p>
 
-      <main className="flex-col mt-10 flex md:flex-row justify-center items-center w-full h-full p-4 md:p-10 py-20 rounded-[2.8rem] bg-neutral-100">
-        <div className="w-full md:w-1/2 flex flex-col gap-20">
+      <main className="flex-col mt-10 flex md:flex-row justify-center items-center w-full h-full p-4 md:p-20 py-20 rounded-[2.8rem] bg-neutral-100">
+        <div className="w-full md:w-1/2 flex flex-col gap-32 relative">
+        
           <FlowPoint
             icon={<PaperPlaneTilt size={40} weight="bold" />}
             text="Vendedor solicita antecipação do crédito judicial na plataforma."
             title="Vendedor solicita"
+            button
           />
           <FlowPoint
             icon={<MagnifyingGlass size={40} weight="bold" />}
