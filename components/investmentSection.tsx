@@ -15,8 +15,8 @@ export const InvestmentSection: React.FC = () => {
   const [hoveringButton, setHoveringButton] = useState<boolean>(false);
 
   return (
-    <div className="w-full px-[3%]">
-      <main className="w-full h-[90vh] md:h-[70vh] rounded-[3rem] bg-zinc-100 flex flex-col md:flex-row px-4 py-10">
+    <div className="w-full md:px-[3%] mt-10 md:mt-0">
+      <main className="w-full h-[90vh] md:h-[70vh] md:rounded-[3rem] bg-zinc-100 flex flex-col md:flex-row px-4 py-10">
         <div className="h-full md:w-[57%] relative">
           <Image alt="Imagem investimento" src={heroSvg} fill />
         </div>
@@ -26,12 +26,12 @@ export const InvestmentSection: React.FC = () => {
             style={nanum.style}
             className="text-[3.8rem] leading-[3.6rem] md:w-[60%]"
           >
-            Lorem ipsum dolor sit amet.
+            Ativos judiciais
           </p>
 
           <p className="mt-5 font-light text-xl text-gray-600">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusantium, nulla quasi. Magni, recusandae dolore?
+            São ativos alternativos de ordem judicial contra entes públicos ou
+            privados
           </p>
 
           <button
